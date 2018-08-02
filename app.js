@@ -23,7 +23,11 @@ function draw() {
 }
 
 function pet() {
-
+ mrSnibbly.pets++;
+ if (mrSnibbly.pets > mrSnibbly.tolerance) {
+  mrSnibbly.moodIndex = 1
+ }
+ draw();
 }
 
 function reset() {
